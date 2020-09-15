@@ -10,7 +10,7 @@ package com.wildchap.object;
 public class AbstractTest2 {
 	public static void main(String[] args) {
 		//创建了一个匿名对象p1
-		Person p1 = new Person() {
+		Person2 p1 = new Person2() {
 			public void eat() {
 				
 			}
@@ -21,8 +21,8 @@ public class AbstractTest2 {
 	}
 }
 
-abstract class Person{
-	public Person() {
+abstract class Person2{
+	public Person2() {
 		
 	}
 	public abstract void eat();

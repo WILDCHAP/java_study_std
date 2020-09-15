@@ -5,6 +5,6 @@ public class Static {
 	private static int num_2 = 10;
 	int num_3 = 10;
 	public static void show() {
-		System.out.println("show" + num_1);
+		System.out.println("show " + num_1);
 	}
 }
