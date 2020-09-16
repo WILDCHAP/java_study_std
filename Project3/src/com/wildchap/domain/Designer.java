@@ -32,4 +32,9 @@ public class Designer extends Programmer {
 	public String toString() {
 		return getDetails() + "\t设计师\t" + getStatus() + "\t" + bonus + "\t\t" + getEquipment().getDescription();
 	}
+	
+	//作为开发团队成员的输出
+	public String getDetailsForTeam() {
+		return getMemberId() + "/" + getId() + "\t" + getName() + "\t" + getAge() + "\t" + getSalary() + "\t设计师\t" + bonus;
+	}
 }

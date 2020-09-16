@@ -30,4 +30,9 @@ public class Architect extends Designer {
 	public String toString() {
 		return getDetails() + "\t架构师\t" + getStatus() + "\t" + getBonus() + "\t" + stock + "\t" + getEquipment().getDescription();
 	}
+	
+	//作为开发团队成员的输出
+	public String getDetailsForTeam() {
+		return getMemberId() + "/" + getId() + "\t" + getName() + "\t" + getAge() + "\t" + getSalary() + "\t设计师\t" + getBonus() + "\t" + stock;
+	}
 }
