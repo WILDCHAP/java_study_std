@@ -13,6 +13,14 @@ package com.wildchap.thread;
  * 9. sleep(Long);  当前线程睡眠多少ms(1000ms=1s)，即几秒执行一次，可用于倒计时
  * 10.isAlive(); 判断当前线程是否存活
  *
+ * 线程的优先级:
+ * MAX_PRIORITY = 10;
+ * MIN_PRIORITY = 1;
+ * NORM_PRIORITY = 5;
+ *  如何获取和设置优先级:
+ *      getPriority();
+ *      setPriority(int k);
+ *
  * @author wildchap
  * @create 2020-09-17-11:47
  */
@@ -21,12 +29,12 @@ class HellowThread extends Thread {
     public void run() {
         for (int i = 0; i < 100; i++) {
             if(i % 2 == 0) {
-                System.out.println(Thread.currentThread().getName() + ":" + i);
-                try {
-                    sleep(1000);    //睡 1s
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                System.out.println(Thread.currentThread().getName() + ":" + Thread.currentThread().getPriority() + " " + i);
+//                try {
+//                    sleep(1000);    //睡 1s
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
             }
             if(i % 20 == 0){
                 //释放当前CPU的执行权
@@ -43,9 +51,13 @@ class HellowThread extends Thread {
 public class ThreadMethodTest {
     public static void main(String[] args) {
         HellowThread h1 = new HellowThread("Thread: 1");
+        //设置分线程优先级
+        h1.setPriority(8);
         //h1.setName("线程一");
         //主线程命名
         Thread.currentThread().setName("主线程");
+        //主线程设置优先级
+        Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
         h1.start();
         for (int i = 0; i < 100; i++) {
             if (i % 2 == 0) {
@@ -59,7 +71,7 @@ public class ThreadMethodTest {
                     e.printStackTrace();
                 }
             }
-            System.out.println(h1.isAlive());
+            //System.out.println(h1.isAlive());
         }
     }
 }
