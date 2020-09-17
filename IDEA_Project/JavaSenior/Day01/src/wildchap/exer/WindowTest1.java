@@ -1,4 +1,4 @@
-package com.wildchap.exer;
+package wildchap.exer;
 
 /**
  * 用方法二实现买票

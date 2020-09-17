@@ -1,4 +1,4 @@
-package com.wildchap.exer;
+package wildchap.exer;
 
 /**
  * 多线程练习

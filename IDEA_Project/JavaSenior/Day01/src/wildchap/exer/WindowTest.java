@@ -1,4 +1,4 @@
-package com.wildchap.exer;
+package wildchap.exer;
 
 /**
  * 例子: 创建三个窗口买票，总票数100张

@@ -1,4 +1,4 @@
-package com.wildchap.thread;
+package wildchap.thread;
 
 /**
  * 多线程的创建，

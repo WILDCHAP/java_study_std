@@ -1,4 +1,4 @@
-package com.wildchap.thread;
+package wildchap.thread;
 
 /**
  * 测试Thread中的常用方法:
