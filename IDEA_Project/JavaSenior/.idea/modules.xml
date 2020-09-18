@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Day01/Day01.iml" filepath="$PROJECT_DIR$/Day01/Day01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Day02/Day02.iml" filepath="$PROJECT_DIR$/Day02/Day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonlyClass/CommonlyClass.iml" filepath="$PROJECT_DIR$/CommonlyClass/CommonlyClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Day01/Day01.iml" filepath="$PROJECT_DIR$/Thread/Day01/Day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Day02/Day02.iml" filepath="$PROJECT_DIR$/Thread/Day02/Day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonlyClass/Day03/Day03.iml" filepath="$PROJECT_DIR$/CommonlyClass/Day03/Day03.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSenior.iml" filepath="$PROJECT_DIR$/JavaSenior.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonlyClass/StringTest.iml" filepath="$PROJECT_DIR$/CommonlyClass/StringTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
     </modules>
   </component>
 </project>
